@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <a href="#">Inicio</a> |
+            <a href="#l">Nosotros</a> |
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Dejanos tu mensaje</h2>
+            <form>
+                <label for="nombre">Nombre completo:</label><br />
+                <input type="text" id="nombre" name="nombre" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,40}$"
+                    title="Solo letras, mínimo 3 caracteres" /><br /><br />
+
+                <label for="email">Correo electrónico:</label><br />
+                <input type="email" id="email" name="email" required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"
+                    title="Ingrese un correo válido" /><br /><br />
+
+                <label for="mensaje">Mensaje:</label><br />
+                <textarea id="mensaje" name="mensaje" required minlength="10" maxlength="300"></textarea><br /><br />
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Mi Sitio Web</p>
+    </footer>
+</body>
+
+</html>
