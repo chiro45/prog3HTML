@@ -1,53 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con Fieldset</title>
 </head>
+
 <body>
-    <form id="formulario">
-    <label for="nombre">Nombre:</label><br>
-    <input 
-      type="text" 
-      id="nombre" 
-      name="nombre" 
-      placeholder="Ej: Juan Pérez" 
-      required 
-      pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\\s]{3,40}$"
-      title="Solo letras, mínimo 3 caracteres"
-    ><br><br>
+  <h1>Formulario de Contacto</h1>
+  <p>Complete los siguientes campos:</p>
 
-    <label for="email">Correo electrónico:</label><br>
-    <input 
-      type="email" 
-      id="email" 
-      name="email" 
-      placeholder="Ej: juan@mail.com" 
-      required
-    ><br><br>
+  <form id="formulario">
 
-    <label for="telefono">Teléfono:</label><br>
-    <input 
-      type="tel" 
-      id="telefono" 
-      name="telefono" 
-      placeholder="Ej: 11-1234-5678" 
-      pattern="^\\d{2}-\\d{4}-\\d{4}$" 
-      title="Formato: 11-1234-5678"
-    ><br><br>
+    <!-- DATOS PERSONALES -->
+    <fieldset>
+      <legend>Datos personales</legend>
 
-    <label for="mensaje">Mensaje:</label><br>
-    <textarea 
-      id="mensaje" 
-      name="mensaje" 
-      rows="4" 
-      cols="40" 
-      required
-      placeholder="Escriba su mensaje aquí..."
-    ></textarea><br><br>
+      <label for="nombre">Nombre completo:</label><br>
+      <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required
+        title="Solo letras, mínimo 3 caracteres"><br><br>
 
+      <label for="email">Correo electrónico:</label><br>
+      <input type="email" id="email" name="email" placeholder="Ej: juan@mail.com" required><br><br>
+
+      <label for="telefono">Teléfono:</label><br>
+      <input type="tel" id="telefono" name="telefono" placeholder="Ej: 11-1234-5678"
+        title="Formato: 11-1234-5678"><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- MENSAJE -->
+    <fieldset>
+      <legend>Mensaje</legend>
+
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="4" cols="40" required
+        placeholder="Escriba su mensaje aquí..."></textarea><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- SATISFACCION -->
+    <fieldset>
+      <legend>Valoración</legend>
+
+      <label for="satisfaccion">Nivel de satisfacción:</label><br>
+      <input type="range" id="satisfaccion" name="satisfaccion" min="0" max="10">
+      <small>De 0 (nada satisfecho) a 10 (muy satisfecho)</small><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- SUBIR IMAGEN -->
+    <fieldset>
+      <legend>Archivo</legend>
+
+      <label for="foto">Suba una imagen (JPG o PNG):</label><br>
+      <input type="file" id="foto" name="foto" accept="image/png, image/jpeg"><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- BOTÓN -->
     <button type="submit">Enviar</button>
   </form>
+
+  <hr>
+  <footer>
+    <p>Gracias por completar el formulario.</p>
+  </footer>
 </body>
+
 </html>
