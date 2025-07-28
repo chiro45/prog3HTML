@@ -1,0 +1,26 @@
+<form id="formulario">
+  <!-- DATOS PERSONALES -->
+  <fieldset>
+    <legend>Datos personales</legend>
+    <label for="nombre">Nombre completo:</label><br>
+    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required
+      title="Solo letras, mínimo 3 caracteres"><br><br>
+
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email" id="email" name="email" placeholder="Ej: juan@mail.com" required><br><br>
+
+    <label for="telefono">Teléfono:</label><br>
+    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 11-1234-5678"
+      title="Formato: 11-1234-5678"><br><br>
+  </fieldset>
+
+  <!-- MENSAJE -->
+  <fieldset>
+    <legend>Mensaje</legend>
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" cols="40" required
+      placeholder="Escriba su mensaje aquí..."></textarea>
+  </fieldset>
+
+  <button type="submit">Enviar</button>
+</form>
