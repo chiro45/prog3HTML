@@ -10,7 +10,7 @@ Este repositorio contiene los archivos correspondientes a cada clase del curso e
 1. Clona este repositorio o descarga los archivos.
 2. Abre la carpeta en VSCode.
 3. Instala la extensión **Live Server**.
-4. Abre cada archivo `videoX.html` con Live Server para seguir el curso.
+4. Abre cada archivo `index.html` con Live Server para seguir el curso.
 
 ---
 
