@@ -14,10 +14,10 @@
 
         <nav>
             <ul>
-                <li><a href="#menu">Menú</a></li>
+                <li><a href="#menu">Menu</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#reserva">Reservas</a></li>
-                <li><a href="./ubicacion.html">¿Como llegar?</a></li>
+                <li><a href="ubicacion.html">¿Como llegar?</a></li>
             </ul>
         </nav>
     </header>
@@ -46,11 +46,11 @@
         <hr>
 
         <!-- Sección sobre el local -->
-        <section id="nosotros">
+        <asaid id="nosotros">
             <h2>Sobre Nosotros</h2>
             <p>Somos un restaurante familiar con más de 20 años de trayectoria en la cocina casera. Nos apasiona la
                 buena comida y la atención cálida.</p>
-        </section>
+        </asaid>
 
         <hr>
 
@@ -74,8 +74,8 @@
                     <input type="time" id="hora" name="hora" required><br><br>
 
                     <label for="personas">Cantidad de personas:</label><br>
-                    <input type="number" id="personas" name="personas" min="1" max="20" required><br><br>
-
+                    <input type="number" id="personas" name="personas" placeholder="0" min="1" max="20" required><br><br>
+                     
                     <label for="comentarios">Comentarios adicionales:</label><br>
                     <textarea id="comentarios" name="comentarios" rows="3"
                         placeholder="Ej: Preferencia de ubicación, sin gluten, etc."></textarea><br><br>
@@ -90,18 +90,6 @@
         <p>&copy; 2025 La Buena Mesa · Todos los derechos reservados</p>
     </footer>
 
-    <script>
-        document.getElementById('form-reserva').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const nombre = document.getElementById('nombre').value;
-            const fecha = document.getElementById('fecha').value;
-            const hora = document.getElementById('hora').value;
-            const personas = document.getElementById('personas').value;
-
-            alert(`¡Gracias ${nombre}! Tu reserva para el ${fecha} a las ${hora} para ${personas} personas fue recibida.`);
-        });
-    </script>
 </body>
 
 </html>
